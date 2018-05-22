@@ -1,0 +1,66 @@
+.title.slide
+  img.title-img(src='./assets/imgs/theme/assembly-cartoon.svg')
+  div(style="height: 40px;")
+  h1 2. Assembly
+
+each step in [1,2,3,4,5]
+  .slide
+    .header Assembly pre-validation
+    .content.vcenter
+      +stepSVG(step, './assets/imgs/drawings/bad_picklist_optimized.svg')
+  
+
+each step in [1,2,3,4,5,6,7,8,9,10]
+  .slide
+    .header Assembly pre-validation with simulated cloning
+    .content.vcenter
+      +stepSVG(step, './assets/imgs/drawings/simulated_cloning_optimized.svg')
+
+
+.slide
+  .header No hands ! DNA assembly in the cloud.
+  .content.vcenter: div
+    .quarter
+      .name Edinburgh Genome Foundry
+      img(src="./assets/imgs/photos/egf_website_screenshot.png")
+    .quarter
+      .name Transcriptic
+      img(src="./assets/imgs/photos/transcriptic_screenshot.png")
+    .quarter
+      .name Emerald Therapeutics
+      img(src="./assets/imgs/photos/emerald_screenshot.png")
+    .quarter
+      .name Aquarium
+      img(src="./assets/imgs/photos/aquarium_screenshot.png")
+
+each step in [1,2,3]
+  .slide
+    .header Assembly time !
+    .content.vcenter: div
+      .col(style="width: 49%; display: inline-block; vertical-align:top;")
+        :markdown-it
+          **Question:** What does this picklist do ?
+        img(src="./assets/imgs/drawings/echo.svg",
+            style='width: 45%; margin-top: 20px; margin-left:25%')
+      .picklist
+        table.ui.compact.celled.striped.table.groups
+          case step
+            when 1
+              include ./assets/tables/picklist1.pug
+            when 2
+              include ./assets/tables/picklist2.pug
+            when 3
+              include ./assets/tables/picklist3.pug
+  
+
+each step in [0, 1, 2, 3]
+  .slide
+    .header Remarks on automated pipetting
+    .content.vcenter
+      ul(class= step > 0 || 'hide'): li.
+        Automated pipetting improves precision, reproducibility, speed, costs.
+      ul(class= step > 1 || 'hide'): li.
+        It does #[b not] resolve the problem's complexity (you still need to
+        write picklists), or the risk of error.
+      ul(class= step > 2 || 'hide'): li.
+        See PR-PR, Antha, Plateo, for examples of software helping with picklist generation.   

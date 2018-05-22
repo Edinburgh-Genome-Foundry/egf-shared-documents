@@ -1,0 +1,168 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css';
+@import 'https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css';
+@import 'https://use.fontawesome.com/releases/v5.0.6/css/all.css';
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+$page_width: 8in;
+$page_height: 6in;
+$primary_color: #7491cf;
+
+@page {
+  size: $page_width $page_height;
+  -relaxed-page-width: $page_width;
+  -relaxed-page-height: $page_height;
+  margin: 0;
+}
+@media print {
+  .slide {
+    border: none !important;
+  }
+}
+
+body,
+html {
+  font-family: "Computer Modern Sans", sans-serif;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.small-font {
+  font-size: 0.8em;
+}
+
+.full-width {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
+.slide {
+  position: relative;
+  // display: block;
+  display: flex;
+  flex-direction: column;
+  width: $page_width;
+  height: $page_height;
+  border: 2px dashed grey;
+  overflow: hidden;
+  counter-increment: slide;
+  &::after {
+    content: counter(slide);
+    font-family: 'Inconsolata', sans-serif;
+    position:absolute;
+    font-size: 0.2in;
+    text-align: right;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: gray;
+  }
+  &.no-number::after {
+    display: none;
+  }
+
+  .header {
+    margin-top: 0;
+    font-weight: normal;
+    color: white;
+    font-size: 1.1em;
+    padding: 0.3em 1.5em;
+    width: 100%;
+    background-color: rgba(#92bbd5, 1);
+    // box-shadow: 0 3px 6px #aaa;
+  }
+  .content {
+    margin-left: 5%;
+    width: 90%;
+  }
+  &.pass {
+    display: none;
+  }
+}
+
+img.round {
+  border-radius: 50%;
+}
+
+.title.slide {
+  font-family: 'Josefin Sans';
+  text-align: center;
+  .title-img {
+    position: absolute;
+    left: 0;
+    max-width: $page_width;
+  }
+
+  h1, h2 {
+    position:relative;
+    color: black;
+    font-weight: normal;
+    margin-right: 0.5em;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-top: -0.5em;
+  }
+
+  .authors {
+    position:relative;
+    font-size: 0.8em;
+    margin-top: 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  li {
+    &:before {
+      font-family: 'FontAwesome';
+      content: '\f0da';
+      float: left;
+      margin-left: -1em;
+      color: $primary_color;
+    }
+  }
+}
+
+@for  $i from 0 to 30 {
+  .top-#{$i}mm { margin-top: #{$i}mm; }
+}
+
+.skip {
+  display: none;
+}
+.hide {
+  visibility: hidden
+}
+.text-center {
+  text-align: center;
+}
+
+.vcenter {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg {
+  max-width: 100%;
+  width: 100% !important;
+  height: auto !important;
+
+}
+
+
+//
+// pre {
+//   box-shadow: 0 0 0.25em 0.25em #ddd;
+//   width: 80%;
+//   margin-left: 10%;
+//   padding: 1em !important;
+// }
+// .eg-code-comment {
+//   font-weight: bold;
+//   color: #dd4321
+// }

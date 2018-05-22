@@ -1,0 +1,51 @@
+
+.title.slide
+  img.title-img(src='./assets/imgs/theme/validation-cartoon.svg')
+  div(style="height: 40px;")
+  h1 3. Validation
+
+each step in [1, 2, 3, 4, 5, 6, 7, 8]
+  .slide
+    h2.header Computer-aided restriction digests
+    .content.vcenter: div
+      p.top-0mm Shoot yourself in the foot with a bad choice of enzymes !
+      center
+        .svg(style="width:75%")
+          +stepSVG(step, './assets/imgs/drawings/bad_digestions.svg')
+
+      p(class= step === 8 || 'hide').
+        Other problems: methylation-sensitive enzymes, enzymes with
+        incompatible activation temperatures.
+
+each step in [1, 2, 3, 4, 5, 6, 7]
+  .slide
+    .header EGF restriction digest software
+    .content.vcenter
+      +stepSVG(step, './assets/imgs/drawings/bandwitch_optimized.svg')
+
+.slide
+  .header Aaaaaaargh ! Aaaaaaaaaaaaaaaargh !
+  .content.vcenter
+    center
+      img(src="./assets/imgs/drawings/failed_validation.svg"
+          style="width: 80%;")
+    p What do you think happened ?
+
+each step in [1, 2]
+  .slide
+    .header Find the saboteurs !
+    .content.vcenter
+      center
+        .svg(style="width:80%;")
+          +stepSVG(step, "./assets/imgs/drawings/sabotage_report2_optimized.svg")
+
+each step in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  .slide
+    h2.header Optimal Sanger Sequencing plan 
+    .content.vcenter
+      +stepSVG(step, './assets/imgs/drawings/primers_selection.svg')
+
+.slide
+  h2.header Primer selection software
+  .content.vcenter
+    img.full-width(src='./assets/imgs/drawings/primer_selection_software.svg')

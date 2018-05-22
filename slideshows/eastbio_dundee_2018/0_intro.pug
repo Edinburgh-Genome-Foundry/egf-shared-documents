@@ -1,0 +1,53 @@
+.title.slide.no-number
+  img.title-img(src='./assets/imgs/theme/title-cartoon2.svg')
+  h1 DNA Assembly is Not for You
+  h2 Leave it to machines !
+  p.authors.
+    Valentin Zulkower<br/>
+    Edinburgh Genome Foundry<br/>
+    EASTBIO Dundee, May 18th, 2018
+
+each step in [0, 1, 2, 3, 4]
+  .slide#plan
+    .header Program
+    .content.top-5mm.small-font
+      p: b Main message: DNA Assembly is very human-unfriendly.
+      
+      p(class= step >= 1 || 'hide').
+        #[b Plan:] We will see some common pitfalls of DNA design,
+        assembly, and validation. And how software can help.
+
+    .small-font
+      
+      .column(class= step >= 2 || 'hide')
+        h3 Design
+        .part
+          .title Overhangs design
+          .subtitle ... without hangover !
+          
+        .part
+          .title Sequence design
+          .subtitle Can you polish a gene?
+        
+        .part
+          .title Parts-based design
+          .subtitle LEGO Madness !
+
+      .column(class= step >= 3 || 'hide')
+        h3 Assembly
+        .part
+          .title Cloning simulation
+          .subtitle Will it assemble ?
+        
+        .part
+          .title Automated pipetting
+          .subtitle Hi robots !
+        
+      .column(class= step >= 3 || 'hide')
+        h3 Validation
+        .part
+          .title Restriction digests
+          .subtitle Say no to digestion problems!
+        .part
+          .title Sanger sequencing
+          .subtitle A primer on primers selection 

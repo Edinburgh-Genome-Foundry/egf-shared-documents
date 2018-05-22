@@ -1,0 +1,152 @@
+.title.slide
+  img.title-img(src='./assets/imgs/theme/design-cartoon.svg')
+  div(style="height: 40px;")
+  h1 1. Design
+
+.slide
+  .header Overhangs design for Type 2S restriction assembly
+
+-
+  var parts = {
+    1: {title: '1. Avoid similar overhangs', steps:4},
+    2: {title: '2. Beware of reverse-complements', steps:5},
+    3: {title: '3. No palindromic sequences', steps:5},
+    4: {title: '4. Avoid 0% or 100% GC', steps:1}
+  }
+  var list = ''
+each part, i in parts
+  -
+    var step = 0
+    list += part.title + '<br/>'
+  while step < part.steps
+    
+    .slide
+      .header Pitfalls of overhang design
+      .content
+        p!= list
+    
+        if (i < 4) && (step > 0)
+          center
+            .svg(style="width: 50%;")
+                - var path = './assets/imgs/drawings/oh_design_pitfall_' + i + '.svg'
+                +stepSVG(step, path)
+    - step++
+      
+  
+.slide
+  .header Overhangs design exercice 1
+  .content.top-10m
+    p Which nucleotide will work best ?
+    .full-width
+      img(src='./assets/imgs/drawings/oh_design_ex1.svg')
+
+.slide
+  .header Overhangs design exercice 2
+  .content.vcenter: div
+    p Is that a valid collection of overhangs ?
+    center
+      img(src='./assets/imgs/drawings/oh_design_ex2.svg'
+          style="width:60%; margin-top: 20px;")
+
+.slide
+  .header Real-world overhang design: EMMA
+  .content.vcenter: div
+    center
+      img.full-width(src='./assets/imgs/drawings/oh_design_emma.svg')
+      p.small-font #[em After Martella et al., ACS Syn. Bio. 2017]
+    ul
+      li 27 compatible overhangs
+      li Some mandatory overhangs (e.g. containing ATG)
+
+.slide
+  .header Real-world overhang design: virus assembly
+  .content.vcenter: div
+    center
+      img.full-width(src='./assets/imgs/drawings/oh_design_ogab.png')
+      p.small-font #[em from Tsuge et al., Sci Rep. 2015]
+    ul
+      li 50 compatible overhangs
+      li Must be as equally spaced as possible in the sequence.
+
+each step in [1, 2, 3, 4, 5]
+  .slide
+    .header Overhang design software
+    a.software-link(src="http://cuba.genomefoundry.org/design-overhangs").
+      cuba.genomefoundry.org/design-overhangs
+    .content.vcenter
+      +stepSVG(step, "./assets/imgs/drawings/oh_design_software.svg")
+    
+  
+  
+each step in [0, 1, 2, 3, 4, 5, 6]
+  .slide
+    .header Sequence polishing: introductory exercice
+    .content.small-font
+      p.
+        Sequence specifications can depend on its purpose, assembly method,
+        synthesis limitations, and validation method. 
+      .full-width      
+        +stepSVG(step, './assets/imgs/drawings/why_polishing_optimized.svg')
+    img.top-1mm.full-width(class = step >= 4 || 'hide',
+                           src=`./assets/imgs/drawings/sequence_polishing_${step - 3}.svg`)
+
+each step in [0, 1, 2, 3]
+  .slide
+    .header Real-world sequence polishing examples
+    .content.vcenter: div
+      ul(class= step > 0 || 'hide'): li: i.
+        I want a 60,000bp sequence that is orthogonal to yeast, but same GC%
+      
+      ul(class= step > 1 || 'hide'): li: i.
+        I want this 50,000bp chromosome segment, but freed from as
+        many common 4bp restriction sites as possible. Conserve ORFs
+        if possible.
+      
+      ul(class= step > 2 || 'hide'): li: i.
+        I want to domesticate these genes for E. coli. They should also pass
+        the constraints of Synthesis Company (no homopolymers, no hairpins, no
+        repeats)
+
+each step in [1, 2]
+  .slide
+    .header Sequence polishing software   
+    a.software-link(src="http://cuba.genomefoundry.org/sculpt_a_sequence").
+      cuba.genomefoundry.org/sculpt_a_sequence
+    .content.vcenter
+      center
+        .svg(style='width: 75%')
+          +stepSVG(step, "./assets/imgs/drawings/sequence_polishing_software.svg")
+
+each step in [1, 2, 3]
+  .slide
+    .header Parts based assembly: easy peasy ?
+    .content
+      +stepSVG(step, "./assets/imgs/drawings/parts_based_exercice_1.svg")
+      if step > 1
+        center
+          p #[b Question:] Where would you place the parts ?
+
+each step in [1, 2]
+  .slide
+    .header Parts based assembly: easy peasy ?
+    .content
+      - 
+        var suffix = step > 1 ? 'b' : ''
+        var path = `./assets/imgs/drawings/parts_based_exercice_2${suffix}.svg`
+      +stepSVG(step, path)
+      center
+        p #[b Question:] Where would you place the parts ?
+
+.slide
+  .header Part-based design with Autodesk Genetic Constructor
+  .content.vcenter
+    center
+      img(src="./assets/imgs/photos/gc_screenshot.png", style='width: 70%;')
+
+.slide
+  .header Automated part selection with RavenCAD
+  .content.vcenter
+    center
+      img(src="./assets/imgs/drawings/parts_based_raven.svg")
+      p.small-font #[em From Appleton et al., Nat Methods 2014]
+      
