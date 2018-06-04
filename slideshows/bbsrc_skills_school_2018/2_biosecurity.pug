@@ -1,0 +1,59 @@
+.title.slide
+  img.title-img(src='./assets/imgs/theme/section.svg')
+  .vcenter
+    h1(style='margin-top:0;') How do we keep<br/>cloud biology safe ? 
+
+each step in [1, 2, 3]
+  .slide
+    .header Challenge : Pathogenicity screening
+    .content.vcenter: div
+      +stepSVG(step, "assets/imgs/drawings/pathogenicity_master_plan_optimized.svg")
+
+each step in [1, 2]
+  .slide
+    .header The International Gene Synthesis Consortium
+    .content.vcenter
+      +stepSVG(step, "assets/imgs/drawings/igsc_optimized.svg")
+
+each step in [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  .slide
+    .header Pathogenicity screening with the IGSC protocol
+    .content.vcenter
+      center
+        .div(style="width: 85%;")
+          +stepSVG(step, "assets/imgs/drawings/pathogenicity_screening_optimized.svg")
+
+each step in [0, 1, 2, 3, 4, 5]
+  .slide
+    .header Pathogenicity screening is hard
+    .content.vcenter.small-font: div
+      ul(class=step >= 1 || 'hide')
+        li A couple mutations can impact pathogenicity a lot (H5N1)
+      ul(class=step >= 2 || 'hide')
+        li Harmless sequences can be harmfull when combined (antibiotics)
+      ul(class=step >= 3 || 'hide')
+        li Sequences can be obfuscated (codon juggling, fragmentation...)
+      ul(class=step >= 4 || 'hide')
+        li Pathogen databases must keep up with discoveries
+      ul(class=step >= 5 || 'hide')
+        li Not all genes in a pathogen organism are pathogenic
+
+.slide
+  .header Note: legitimate projects also raise eyebrows
+  .content.vcenter
+    center
+      img(style='width:85%' src='assets/imgs/screenshots/smallpox.jpg')
+
+.slide
+  .header Note: DNA sequences #[em could] also target software
+  .content.vcenter
+    center
+      img(style='width:85%' src='assets/imgs/screenshots/dna_hack.jpg')
+
+each step in [0, 1, 2, 3, 4, 5, 6, 7]
+  .slide
+    .header Note: DNA today vs. 80's #[em supercomputers]
+    .content.vcenter
+      center
+        .div(style="width: 95%;")
+          +stepSVG(step, "assets/imgs/screenshots/supercomputers_optimized.svg")

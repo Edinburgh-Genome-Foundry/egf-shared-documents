@@ -1,0 +1,142 @@
+@import 'theme';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/table.min.css';
+.slide#plan {
+  .column {
+    border-radius: 20px;
+    margin: 2.5%;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+    background-color: lighten(#30678b, 61);
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    text-align: center;
+    h3 {
+      text-align: center;
+      margin-top: 0.4em;
+      margin-bottom: 0em;
+    }
+    color: #30678b;
+    h5 {
+      font-size: 0.5em;
+      text-transform: uppercase;
+      margin-bottom: 0.4em;
+      margin-top: 2.5em;
+    }
+    .part {
+      margin-top: 1.1em;
+      // text-align: left;
+      .title {
+        font-size: 20px;
+      }
+      .subtitle {
+        font-size: 16px;
+        color: black;
+      }
+    }
+  }
+}
+
+.automated-platforms.slide {
+  img.web-screenshot {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+  }
+  .name {
+    text-align: center;
+    font-weight: bold;
+  }
+  .date {
+    text-align: center;
+    font-size: 0.8em;
+    // margin-top: 0em;
+  }
+  .quote {
+    margin-top: 3em;
+    font-style: italic;
+    text-align: right;
+    border-right: 2px solid grey;
+    padding-right: 0.5cm;
+    .author {
+      margin-top: 1em;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+  }
+}
+
+.cloud-software.slide {
+  .web-screenshot {
+    width: 44%;
+    margin-right: 3%;
+    margin-left: 3%;
+    display: inline-block;
+    img {
+      width: 100%;
+    }
+    .label {
+      text-align: center;
+      font-size: 0.7em;
+      margin-top: 0.7em;
+    }
+  }
+}
+
+.quarter {
+  display: inline-block;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2%;
+  .name {
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 0.3em;
+  }
+  img {
+    width: 90%;
+    margin-left:5%
+  }
+}
+
+
+.title.slide {
+  font-family: 'Raleway';
+  text-align: center;
+  .title-img {
+    position: absolute;
+    left: 0;
+    max-width: $page_width;
+  }
+
+  h1, h2 {
+    position:relative;
+    color: black;
+    font-weight: normal;
+    margin-right: 0.5em;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: white;
+    margin-top: 0.2em;
+    font-weight: 600;
+  }
+  h2 {
+    color: white;
+    font-size: 1.1em;
+    margin-top: -1.1em;
+  }
+
+  .authors {
+    position:absolute;
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: bold;
+    left: 0.5cm;
+    font-size: 0.55em;
+    color: white;
+    bottom: 0.5cm;
+    opacity: 0.2;
+  }
+}

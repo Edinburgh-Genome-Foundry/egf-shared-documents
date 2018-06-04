@@ -1,0 +1,83 @@
+.title.slide
+  img.title-img(src='./assets/imgs/theme/section.svg')
+  .vcenter
+    h1(style='margin-top:0;') A few examples <br/>of cloud biology
+
+each platform in ['emerald', 'transcriptic', 'egf']
+  .automated-platforms.slide
+    .header Some automated facilities in the world
+    .content.vcenter: div
+      img.web-screenshot(src=`assets/imgs/screenshots/${platform}.jpg`)
+      case platform
+        when 'emerald'
+          .name Emerald Labs
+          .date Founded 2010 
+          .quote
+            .text.
+              Sweep aside the daily laboratory grind, and allow day-to-day work
+              to center on orchestrating science
+            .author - emeraldcloudlab.com
+
+        when 'transcriptic'
+          .name Transcriptic
+          .date Founded 2012
+          .quote
+            .text.
+              Make it possible for two postdocs with a laptop in a coffee shop
+              to run a drug company.
+            .author - Max Hodak, Founder & CTO
+        
+        when 'egf'
+          .name EGF
+          .date Founded 2014
+          .quote
+            .text.
+              Enable high-throughput projects and provide DNA assembly
+              expertise in the UK and beyond.
+            .author (note: we need to say something cooler for next time)
+
+-
+  var categories = [
+    {
+      label: 'Sequence design software',
+      software: [
+        { img: 'gc', label: "Autodesk Genetic Constructor" },
+        { img: 'benchling', label: "Benchling" },
+      ]
+    }, {
+      label: 'Protocol management software',
+      software: [
+        { img: 'protocolsio', label: "protocols.io" },
+        { img: 'riffyn', label: "Riffyn" },
+      ]
+    }, {
+      label: 'Data repositories',
+      software: [
+        { img: 'synbiohub', label: "SynbioHub" },
+        { img: 'fairdom', label: "FAIRdom" },
+      ]
+    }
+  ]
+
+each category in categories
+  .cloud-software.slide
+    .header= category.label
+    .content.vcenter: div
+      each software in category.software
+        .web-screenshot
+          img(src=`assets/imgs/screenshots/webapp_${software.img}.jpg`)
+          .label= software.label
+
+each step in [1, 2, 3, 4, 5, 6, 7]
+  .slide
+    .header Globalized pathway engineering (from true stories)
+    .content.vcenter
+      +stepSVG(step, "assets/imgs/drawings/globalized_biology_optimized.svg")
+  
+
+each step in [1, 2, 3, 4, 5]
+  .slide
+    .header Cloud biology in academia
+    .content.vcenter
+      +stepSVG(step, "assets/imgs/screenshots/shipman_nature_optimized.svg")
+  

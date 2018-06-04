@@ -1,0 +1,30 @@
+.title.slide.no-number
+  img.title-img(src='./assets/imgs/theme/title.svg')
+  //- img.logo(src='./assets/imgs/theme/egf-logo-shadow.svg')
+  h1 CLOUD BIOLOGY
+  h2 A short introduction
+  p.authors.
+    Valentin Zulkower<br/>
+    Edinburgh Genome Foundry<br/>
+    BBSRC Skills School, June 4th, 2018
+
+for step in [1, 2, 3, 4, 5]
+  .slide
+    .header Program
+    .content.top-1
+      p(style="margin-bottom:0.5em;").
+        Labs are increasingly outsourcing their bench work. <br/>
+        We will give an overview of that trend:
+        
+      ul(class=step >= 2 || 'hide')
+        li #[b A few examples of cloud biology] in industry and academia.
+      
+      ul(class=step >= 3 || 'hide')
+        li #[b Biosecurity challenges] coming with cloud biology
+      
+      ul(class=step >= 4 || 'hide')
+        li #[b What happens after you click "order"] in the particular example of the EGF.
+      
+      p(class=step >= 5 || 'hide').
+        Tomorrow we will look closer at how software can help you assemble
+        DNA without thinking too much.
