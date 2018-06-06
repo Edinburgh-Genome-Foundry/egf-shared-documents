@@ -10,7 +10,7 @@ This repository will contain some presentations, courses, etc. of the Edinburgh 
       <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/blob/master/slideshows/eastbio_dundee_2018/sample.pdf">
         <img src="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/slideshows/eastbio_dundee_2018/talk_screenshot.jpeg" />
       </a>
-      EASTBIO Dundee 2018 talk -
+      DNA Assembly is Not for You -
       <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/tree/master/slideshows/eastbio_dundee_2018/"> source </a> /
       <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/slideshows/eastbio_dundee_2018/sample.pdf"> PDF </a>
     </td>
@@ -18,9 +18,9 @@ This repository will contain some presentations, courses, etc. of the Edinburgh 
          <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/blob/master/slideshows/bbsrc_skills_school_2018/sample.pdf">
         <img src="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/slideshows/bbsrc_skills_school_2018/talk_screenshot.jpeg" />
       </a>
-      EASTBIO Dundee 2018 talk -
+      Cloud Biology -
       <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/tree/master/slideshows/bbsrc_skills_school_2018/"> source </a> /
-      <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/slideshows/bbsrc_skills_school_2018s/sample.pdf"> PDF </a>
+      <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/slideshows/bbsrc_skills_school_2018/sample.pdf"> PDF </a>
     <td/>
   </tr>
   <tr align="center">
