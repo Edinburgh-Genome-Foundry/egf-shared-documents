@@ -1,0 +1,71 @@
+h1 DNA Providers
+hr
+  
+mixin product(name, price, time, size_range, remarks)
+  .ui.ribbon.label.red= name
+  .description
+    block
+  .ui.list
+    .item
+      i.dollar.sign.icon
+      .content=price
+    .item
+      i.clock.outline.icon
+      .content=time
+    .item
+      i.dna.icon
+      .content=size_range
+    if remarks
+      .item
+         i.exclamation.circle.icon
+         .content= remarks
+
+
+.company.ui.card
+  .content
+    .header Heliveroo
+    p A fast and good-value DNA company. They assemble blocks from oligos.
+  .content
+    +product("Plasmid prep", "20c/bp (+ 30$ for custom backbone)",
+             "3 weeks", "50-3000bp",
+             "No BsaI, XbaI site. No repeats*")
+      p Delivered as a 250ng of dry plasmid.
+    +product("DNA string", "10c/bp (+ 30$ for custom backbone)", "50-1200bp",
+             "No BsmBI site. No repeats*")
+      p 250ng of dry double-stranded DNA.
+
+.company.ui.card
+  .content
+    .header Primerk
+    p You only source for primers and oligos.
+  .content
+    +product("ssDNA oligo", "20c/bp",
+             "5 days",
+             "10-200bp", "No Repeats")
+      p Delivered on plate as 250ng of single-stranded DNA.
+    +product("ssDNA pre-mixes", "17c/bp (+ 30$ to include annealing)",
+             "5 days",
+             "10-200bp", "No Repeats*")
+      p Pre-mixed: 2 oligos per plate well
+
+.company.ui.card
+  .content
+    .header Plasmibaba
+    p Master cloners. They will make any sequence (by hand) as long as you pay.
+  .content
+    +product("Plasmid insert", "$1/bp", "6 weeks", "50-20,000bp")
+      p Delivered as a 250ng of dry plasmid.
+    +product("Artificial Chromosome", "$3/bp", "10 weeks", "20k-100k")
+      p Delivered as a 250ng of dry plasmid.
+
+.company.ui.card
+  .content
+    .header Chramazon
+    p #1 DNA retailers. They treat customers much better than their own employees.
+  .content
+    +product("Plasmid prep", "20c/bp (+ 30$ for custom backbone)",
+             "3 weeks", "1000-3000bp", "No BsmBI site, no repeats*")
+      p Delivered as a 250ng of dry plasmid.
+
+p(style="font-size:0.9em !important; margin-top: -2em; margin-left: 65%;").
+  *No repeats means that every 20bp  <br/> subfragment is unique in the sequence.

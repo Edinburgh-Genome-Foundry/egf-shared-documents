@@ -1,3 +1,4 @@
 slideshows/*/talk.pdf
 slideshows/*/master.pdf
-.htm
+*.htm
+

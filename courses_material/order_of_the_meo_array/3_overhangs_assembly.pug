@@ -1,0 +1,58 @@
+h1 Short-overhangs assembly methods
+hr
+
+.two-column(style="margin-top: 3.5em;")
+  :markdown-it
+    This sheet describes two methods for assembling DNA parts via four-nucleotides
+    sticky ends. In both methods, the idea is to mix together DNA fragments with
+    four bare nucleotides on each end. Fragments with complementary ends will
+    assemble together and form the desired construct (Figure 1a). However these
+    methods differ slightly in their protocol and in the nature of the DNA
+    fragments to order. 
+    
+    **Overhang design.** The sequences of the 4 terminal nucleotides (also called
+    *overhangs*) must must be carefully chosen to ensure that the parts will
+    assemble in the right order. If two overhangs are identical (or
+    reverse-complementary), mis-annealing can occur between non-consecutive parts
+    (Figure 1b). If an overhang is palyndromic, then the fragment will
+    *self-anneal* with other copies of the fragment in the reaction mix
+    (Figure 1c). Overhangs with no G/C or no A/T should also be avoided.
+    Designing valid collections of valid overhangs can therefore be tricky, but
+    software can help (see Software section).
+  
+    **Type 2S restriction assembly.** In this method, the genetic parts
+    to be assembled must each be flanked, on each side, by an arbitrary
+    nucleotide followed by a BsmBI site (as shown on Figure 2). The parts
+    are stored on a plasmid and kept in purified form in 96-well plates.
+    Assemblies are carried out by mixing 13 femtomol of each part in a well
+    containing 200 nanoliters of buffer and water to complement to 1 microliter.
+    The buffer contains BsmBI restriction enzymes to produce the sticky
+    fragments, and a ligase to assemble the fragments together. After incubation
+    in a thermocycler, a few circular assemblies are (hopefully) formed, and
+    they are amplified by the usual process (transformation, plating, colony picking,
+    plasmid purification).
+    
+    **Oligo-based assembly.** This method only differs from the restriction
+    assembly method in that the parts are not originally on a backbone. Instead, they
+    are formed by annealing (in a thermoclycler) two oligomers in order to form
+    a double-stranded DNA sequence with sticky ends. The parts are then mixed
+    together (this time no BsmBI is needed), ligated, and the rest of the
+    protocol is the same.
+    
+    **Questions:** what are the advantages and the limits of each method ?
+    Could they work for Anna's project ? 
+    
+  .ui.segment.piled.figure
+    img.full-width(src="./assets/imgs/plots/overhang_assembly_pitfalls.svg")
+    :markdown-it
+      **Figure 1: examples of valid and invalid overhang design.** 
+
+.ui.segment.piled.figure
+  img.full-width(src="./assets/imgs/plots/overhang_assembly_protocols_optimized.svg")
+  :markdown-it
+    **Figure 2: Implementation of Type 2S and oligo based assemblies.**
+    **Left:** part domestication and protocol for the two types of assembly
+    discussed. Red annotations indicate the DNA sequence to synthetize in order
+    to use the genetic part. **Right plot:** (idealized) graph of the percentage
+    of good clones observed over various Type 2S restriction assembly
+    experiments at the Foundry. 

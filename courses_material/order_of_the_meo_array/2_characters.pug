@@ -1,0 +1,54 @@
+
+center
+  h1 Characters
+hr
+
+mixin character(title, imgName)
+  .ui.items.character
+    .item
+      .ui.tiny.image: img(src='assets/imgs/characters/' + imgName + '.svg')
+      .content
+        .header= title
+        .description
+          block
+
++character("Project Owner", "manager")
+  :markdown-it
+    You communicate with your team and the customer to make sure the project
+    will succesfully go through all assembly steps, will be validated by the
+    customer, and will make the most of the Foundry's automation capabilities.
+
++character("Sequence Designer", "designer")
+  :markdown-it
+    You communicate with your team and the customer to make sure the project
+    will succesfully go through all assembly steps, will be validated by the
+    customer, and will make the most of the Foundry's automation capabilities.
+
++character("Supplies Officer", "inventory_manager")
+  :markdown-it
+    You specialize in finding the best DNA providers and listing everything
+    needed for DNA assembly and verification.
+
++character("Automation engineer", "automation_engineer")
+  :markdown-it
+    You specialize in planning operations, selecting the right robots for
+    the right tasks, and writing picklists for the robots.
+
++character("Quality Specialist", "quality_specialist")
+  :markdown-it
+    You are responsible for planning and conducting the Quality Control of
+    the assemblies.
+
+center
+  h2 Non-player characters
+hr
+
++character("Anna", "anna")
+  p.
+    Anna needs to publish as fast as possible, otherwise kitten will literally die.
+    She can be contacted at any time at #[a(href='mailto:anna.e.robik@gmail.com') anna.e.robik@gmail.com]
+
++character("Advisory board", "advisors")
+  :markdown-it
+    Played by the actual EGF staff, they are always available to answer your
+    questions. Don't hesitate to reach out !

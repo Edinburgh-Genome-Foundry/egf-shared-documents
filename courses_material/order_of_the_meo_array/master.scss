@@ -1,0 +1,31 @@
+@import 'theme.scss';
+
+.egf-software {
+  .software-piece {
+    display: inline-block;
+    vertical-align: top !important;
+    margin-top: 0.2em !important;
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    h4 {
+      margin-bottom: 1em
+    }
+    .figure {
+      margin-top: 2em;
+    }
+    font-size: 0.7em;
+    height: 10.8cm;
+  }
+}
+
+.operations {
+  h3, h4, h2 {
+    margin-top: 0.7em;
+  }
+  table {
+    font-size: 0.8em !important;
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+}

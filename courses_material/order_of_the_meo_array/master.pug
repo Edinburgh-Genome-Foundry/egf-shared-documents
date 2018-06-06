@@ -1,0 +1,36 @@
+.report-sidebar: p.
+  Published by the Edinburgh Genome Foundry under the
+  Attribution-ShareAlike 2.5 Generic (CC BY-SA 2.5) license.
+
+.title
+  h1 The Order of the MEO array
+  h2 A DNA Foundry Adventure Game 
+
+include 0_headers
+include 1_scenario
+include 2_characters.pug
+include 3_overhangs_assembly
+include 4_dna_providers.pug
+include 5_operations.pug
+include 6_available_enzymes
+include 7_egf_software.pug
+
+template#page-footer
+  style(type='text/css').
+    .pdfheader {
+      font-size: 10px;
+      font-family: Helvetica;
+      font-weight: bold;
+      width: 1000px;
+      border-top: 1px solid black;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 1mm;
+      margin-bottom: -1mm;
+      text-align: center;
+    }
+  
+  .pdfheader Page #[span.pageNumber] / #[span.totalPages]
+
+style
+  include:scss master.scss

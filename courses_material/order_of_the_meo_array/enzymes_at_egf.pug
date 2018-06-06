@@ -1,0 +1,24 @@
+h1 Available Enzymes
+hr
+.ui.segment.piled
+  :markdown-it
+    This page summarizes the restriction enzymes available in your Foundry.
+    For each enzyme it is indicated whether it is High Fidelity, its price
+    for 200 units, and whether it is Methylation dependent.
+    All enzymes work at 37C.
+    
+.table
+  table.ui.table.definition.enzymes-table
+    include ./assets/tables/egf_enzymes.pug
+
+style.
+  .table {
+    column-count: 2 ;
+    column-gap: 1.5cm;
+  }
+  .enzymes-table {
+    font-size: 13px !important;
+  }
+  .enzymes-table td, .enzymes-table th  {
+    text-align: center !important;
+  }

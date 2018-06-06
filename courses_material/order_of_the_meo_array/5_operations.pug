@@ -1,0 +1,149 @@
+h1 Operations
+hr
+
+.operations.two-column(style="margin-top:1em")
+  
+  h2(style="margin-top: 0 !important;") Operation costs
+  hr
+    
+  table.ui.table.definition(style='text-align: center')
+    include assets/tables/operation_costs.pug
+    
+  p.
+    (Keep in mind that for a batch of 96 assemblies, you may need to do more
+     than 96 minipreps, fragment analysis or Sanger sequencing operations)
+  h2 Tecan
+  hr
+  
+  h4 Details
+  
+  table.ui.table.definition
+    tbody
+      tr
+        td Source plates
+        td 96w / 384w
+      tr
+        td Minimal volume / dispense
+        td 0.1 μL
+      tr
+        td Maximal volume / dispense
+        td 1 mL
+      tr
+        td Tips dead volume
+        td 0.1 μL
+      tr
+        td Resolution
+        td 0.1 μL
+  
+  h4 Example of protocol spreadsheet
+
+  table.ui.table
+    thead
+      th Action
+      th Plate
+      th Well #
+      th V (μL)
+    tbody
+      tr
+        td Aspire
+        td Source
+        td 1
+        td 49
+      tr
+        td Dispense
+        td Destination
+        td 2
+        td 49
+      tr
+        td Wash tubes
+      tr
+        td Aspire
+        td Source
+        td 23
+        td 10
+      tr
+        td Dispense
+        td Destination
+        td 40
+        td 10
+      tr
+        td Wash tubes
+  
+  p.
+    (The well number corresponds to the number of the well, column-wise, from
+     left to right)
+      
+        
+          
+  br
+  h2 Echo
+  hr
+  
+  h4 Details
+  
+  table.ui.table.definition
+    tbody
+      tr
+        td Source plates
+        td 384w / 1536w
+      tr
+        td Minimal volume / dispense
+        td 2.5 nL
+      tr
+        td Maximal volume / dispense
+        td 500 nL
+      tr
+        td Resolution
+        td 2.5 nL
+  
+  h4 Example of protocol spreadsheet
+
+  table.ui.table(style='text-align: center')
+    thead
+      th Source
+      th Destination
+      th Volume (nL)
+    tbody
+      tr
+        td H13
+        td A1
+        td 15
+      tr
+        td F5
+        td A1
+        td 35
+      tr
+        td G11
+        td A2
+        td 135
+      tr
+        
+  h2 Plates
+  hr
+  
+  table.ui.table.definition(style='text-align: center')
+    thead
+      th plate
+      th capacity
+      th dead volume (ECHO)
+      th dead volume (TECAN)
+    tbody
+      tr
+        td 96w
+        td 150 μL
+        td -
+        td 10 μL
+      tr
+        td 384w
+        td 49 μL
+        td 9 μL
+        td 10 μL
+      tr
+        td 1536w
+        td 2 μL
+        td 0.5 μL
+        td -
+
+  h2 Backbone
+  hr
+  img(src="assets/imgs/EMMA_backbone_optimized.svg", style="width:70%; margin-left: 15%; margin-top: 1em;")

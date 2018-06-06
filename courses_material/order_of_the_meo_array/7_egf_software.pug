@@ -1,0 +1,67 @@
+h1 EGF Software
+hr
+
+//- .ui.icon.message.yellow(style='margin-bottom:0.6cm;')
+//-   i.lightbulb.outline.icon
+//-   .content
+//-     .header Get online !
+//-     p The software discussed here is available at #[a(href='http://cuba.genomefoundry.org/') cuba.genomefoundry.org]
+
+.egf-software
+  
+  .ui.segment.software-piece
+    center: h4 EGF CUBA   
+    p.
+      EGF CUBA gathers software wep applications for various tasks. In this
+      section we focus on some of the most useful apps for our purpose, but feel
+      free to use others as well. <br/> It is available at is available at #[a(href='http://cuba.genomefoundry.org/') cuba.genomefoundry.org]
+    .figure: center: img(width="90%", src="./assets/imgs/software/egf-cuba.jpg")
+  
+  .ui.segment.software-piece
+    center: h4 Design overhangs
+    p.
+      This app generates collections of compatible overhangs under a set
+      of specifications. It can also be used to fragment a sequence into fragments
+      which can then be assembled using type-2S restriction assembly.
+    .figure: img(style="width:90%", src="./assets/imgs/software/design_overhangs_optimized.svg")
+    
+  .ui.segment.software-piece
+    center: h4 Sculpt a sequence
+    
+    p.
+      This app can optimize a sequence with respect to constraints and
+      objectives, for instance to remove a restriction site, remove homologies between
+      parts of a sequence, etc.
+    .figure: center: img(width="90%", src="./assets/imgs/software/sculpt_sequence_optimized.svg")
+
+  .ui.segment.software-piece
+    
+    center: h4 Simulate cloning
+    p.
+      This app can predict whether several genetic parts will assemble correctly
+      into a circular construct. It returns the final assembly sequence (required
+      for quality control) and helps detect and troubleshoot design mistakes.
+    
+    .figure: center: img(width="80%", src="./assets/imgs/software/simulate_golden_gate_optimized.svg")
+    
+  .ui.segment.software-piece
+    
+    center: h4 Select digestions
+    
+    p.
+      This app automatically finds enzymes (or sets of enzymes) that will
+      produce informative digestion patterns for all genetic construct in a
+      given set.
+    
+    .figure: center: img(width="86%", src="./assets/imgs/software/select_digestions_optimized.svg")
+
+  .ui.segment.software-piece
+    
+    center: h4 Select primers
+    
+    p.
+      This app can generate a Sanger sequencing plan to sequence a batch of
+      construct. It takes advantage of homologies between constructs,
+      and already-available primers, to minimize the number of new primers to buy.
+    
+    .figure: center: img(width="90%", src="./assets/imgs/software/select_primers_optimized.svg")
