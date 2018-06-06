@@ -28,8 +28,8 @@ This repository will contain some presentations, courses, etc. of the Edinburgh 
       <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/blob/master/courses_material/order_of_the_meo_array/sample.pdf">
         <img src="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/slideshows/eastbio_dundee_2018/talk_screenshot.jpeg" />
       </a>
-      The order of the MEO array
-      <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/tree/master/courses_material/order_of_the_meo_array/"> source </a> /
+      The Order of the MEO Array
+      <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/tree/master/courses_material/order_of_the_meo_array/screenshot.jpeg"> source </a> /
       <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/courses_material/order_of_the_meo_array/sample.pdf"> PDF </a>
     </td>
     <td width="50%">
@@ -38,12 +38,16 @@ This repository will contain some presentations, courses, etc. of the Edinburgh 
   
 </table>
 
-¢ Edinburgh Genome Foundry and authors, released under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 ## Disclaimers
 
+### Views and opinions
+
+While these documents mostly present facts or fictional examples, they may occasionally express opinions and views from the author(s).
+These are the author(s) only and do not engage the EGF or the University of Edinburgh.
 
 ### Licence
+
 These documents are ¢ Edinburgh Genome Foundry and authors.
 They are released on Github under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
@@ -52,5 +56,7 @@ They are released on Github under a <a rel="license" href="http://creativecommon
 The documents featured in this repo may feature images from third-parties.
 These images are utilized in fair use, to illustrate some aspects of DNA assembly and Synthetic Biology, for academic education and information purposes.
 
+## Issues
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+Don't hesitate to open a Github issue or contact us directly at egf@ed.ac.uk for any comment on the documents hosted in this repository.
+
