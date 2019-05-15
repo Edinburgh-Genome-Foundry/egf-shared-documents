@@ -1,0 +1,40 @@
+#title-slide {
+  color: #716fc0;
+  font-family: "Oswald";
+  h1 {
+    font-family: "Oswald";
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 0.3cm;
+    margin-top: 0.3cm;
+    margin-bottom: 0;
+    line-height: 1.1cm;
+    font-weight: normal;
+    color: #514f81;
+    em {
+      font-style: normal;
+      opacity: 0.8
+    }
+    .small {
+      font-size: 0.6em;
+    }
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  img.foundry {
+    position: absolute;
+    margin-top: 2.3cm;
+    width: 100%;
+    clip-path: polygon(100% 2%, 100% 62%, 0% 83%, 0 23%);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  img.logos {
+    position: absolute;
+    bottom: 0.2cm;
+    right: 0.2cm;
+    height: 2em;
+  }
+}

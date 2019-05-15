@@ -1,0 +1,33 @@
+- var __dir = './slides/a-ht-robotic-platform/'
+
+.slide
+    .header The EGF's High-Throughput robotic platform
+    img(src=__dir + 'egf-photo.png' style='width: 110%; height: auto; margin-top: 2cm')
+
+each step in [1, 2, 3]
+  .slide
+    .header The EGF's High-Throughput Robotic Platform
+    .content.vcenter
+      +stepSVG(step, __dir + "robotic-overview_optimized.svg")
+
+-
+  var layers = [
+    ['Base', [1]],
+    ['Echo', [0, 1, 2, 3, 4, 5, 6]],
+    ['trobots', [0, 1, 2, 3, 4]],
+    ['transfo', [0, 1, 2, 3, 4, 5]],
+    ['plating', [0, 1, 2, 3, 4]],
+    ['overnight', [0, 1, 2, 3]],
+    ['picking', [0, 1, 2, 3, 4]],
+    ['Miniprep', [0, 1, 2, 3]],
+    ['QC', [0, 1, 2, 3, 4]],
+    ['Capacities', [0, 1, 2, 3]],
+  ]
+
+each layer_steps in layers
+  - var [layer, steps] = layer_steps
+  each step in steps
+    .slide
+      .header The EGF's High-Throughput Robotic Platform
+      .content.vcenter
+        +stepSVG(step, __dir + "robotic-walkthrough_optimized.svg", layer)

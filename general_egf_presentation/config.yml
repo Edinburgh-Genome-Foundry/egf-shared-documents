@@ -1,0 +1,4 @@
+pageRenderingTimeout: 60
+plugins:
+  - svg
+
