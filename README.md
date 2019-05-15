@@ -33,6 +33,13 @@ This repository will contain some presentations, courses, etc. of the Edinburgh 
       <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/courses_material/order_of_the_meo_array/sample.pdf"> PDF </a>
     </td>
     <td width="50%">
+    <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/blob/master/slideshows/general_egf_presentation/sample.pdf">
+        <img src="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/slideshows/general_egf_presentation/talk_screenshot.jpeg" />
+      </a>
+      General EGF presentation
+      <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/tree/master/courses_material/order_of_the_meo_array/screenshot.jpeg"> source </a> /
+      <a href="https://github.com/Edinburgh-Genome-Foundry/egf-shared-documents/raw/master/courses_material/order_of_the_meo_array/sample.pdf"> PDF </a>
+    </td>
     <td/>
   </tr>
   
