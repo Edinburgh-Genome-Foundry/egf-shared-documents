@@ -1,0 +1,15 @@
+- var __dir = './slides/foundry-about-throughput/'
+-
+  var layers = [
+    ['plates', [0, 1]],
+    ['robots', [1]],
+    ['Capacities', [1, 2, 3]],
+  ]
+
+each layer_steps in layers
+  - var [layer, steps] = layer_steps
+  each step in steps
+    .slide
+      .header The EGF platform is about throughput
+      .content.vcenter
+        +stepSVG(step, __dir + "robotic-walkthrough_optimized.svg", layer)

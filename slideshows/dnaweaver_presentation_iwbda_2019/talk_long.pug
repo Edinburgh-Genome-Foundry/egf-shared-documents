@@ -1,0 +1,30 @@
+style
+  include:scss talk.scss
+
+mixin onlyFrom(step, from, to)
+  if ((step >= from) && (!!to || (step <= to)))
+    block
+
+-
+  var showFrom = function(step, from, to=99999) {
+    return ((step >= from) && (step <= to)) ? 'show' : 'hide'
+  }
+
+include slides/title-slide/title-slide.pug
+include slides/motivation/motivation.pug
+include slides/types-of-projects/types-of-projects.pug
+include slides/elrond-council/elrond-council.pug
+include slides/web-orders/web-orders.pug
+include slides/dna-weaver-demo/dna-weaver-demo.pug
+include slides/dna_sources/dna_sources.pug
+
+include slides/supply-networks-tricks/supply-networks-tricks.pug
+include slides/lead-times/lead-times.pug
+include slides/shortest-path-decomposition/shortest-path-decomposition.pug
+include slides/graph-operations/graph-operations.pug
+include slides/fine-grain-coarse-grain/fine-grain-coarse-grain.pug
+include slides/a_star/a_star.pug
+include slides/manufacturability-optimization/manufacturability-optimization
+include slides/egf-team/egf-team.pug
+
+

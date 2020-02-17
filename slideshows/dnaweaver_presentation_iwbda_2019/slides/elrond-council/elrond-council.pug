@@ -1,0 +1,16 @@
+- var __dir = './slides/elrond-council/'
+
+each step in [0, 1, 2, 3]
+  .slide.dark
+    .header What a typical assembly strategy meeting looks like
+    div(style='margin-top: 0.5cm')
+      +stepSVG(step, __dir + "elrond-council_optimized.svg")
+
+style.
+
+  .dark {
+    background: black;
+  }
+  .dark .header {
+    color: #eee !important;
+    border-bottom: none !important;

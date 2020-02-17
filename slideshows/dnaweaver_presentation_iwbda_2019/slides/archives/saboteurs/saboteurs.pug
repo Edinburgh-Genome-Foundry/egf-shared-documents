@@ -1,0 +1,17 @@
+- var __dir = './slides/saboteurs/'
+
+each step in [1, 2]
+  .slide
+    .header Toubleshooting time!
+    .content.vcenter
+      center
+        img(src=__dir + "failed_validation.svg"
+            style="width: 90%;")
+      img(style='position:absolute; right: -1cm; bottom: -1cm; height:4.5cm;',
+          src= __dir + (step < 2 ? 'emoji_ooh.svg' : 'emoji_thinking.svg'))
+
+each step in [0, 1, 2, 3, 4]
+  .slide
+    .header Toubleshooting with Saboteurs
+    .content.vcenter
+        +stepSVG(step, __dir +  'sabotage_report3_optimized.svg')

@@ -1,0 +1,17 @@
+- var __dir = './slides/goldenhinges/'
+- var title = 'Goldenhinges: a Golden Gate overhangs designer'
+each step in [0, 1, 2, 3, 4]
+  .slide
+    .header= title
+    .content.vcenter
+      if step > 0
+        p(style='margin-bottom: 2em; margin-top: 0;') Problem: nobody ever really wants the standard!
+      if step > 0
+        center
+          p(style='font-size: 0.5em;'): i Phytobricks standard (Patron et al., New Phytologist, 2015)
+      +stepSVG(step, __dir + "nobody-wants-the-standard_optimized.svg")
+each step in [0, 1, 2, 3, 4, 5, 6]
+  .slide
+    .header= title
+    .content.vcenter
+      +stepSVG(step, __dir + "goldenhinges_optimized.svg")

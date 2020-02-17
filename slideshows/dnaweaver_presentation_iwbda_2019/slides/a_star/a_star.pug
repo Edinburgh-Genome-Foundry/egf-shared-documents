@@ -1,0 +1,35 @@
+- var __dir = './slides/a_star/'
+- var title = 'Accelerating sequence decomposition with the A* algorithm'
+
+
+-
+  var layers = [
+    ['a_star_intro', [0, 1, 2, 3, 4, 5, 6, 7, 8]], //-, 4, 5, 6, 7, 8]],
+    //- ['multishops', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]],
+    //- ['multisteps', [1, 2, 3, 4, 5]]
+  ]
+
+each step in [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  .slide(style='padding-bottom:0; margin-bottom: 0; border: none;')
+    .header=title
+    .content.vcenter: center
+      +stepSVG(step, __dir + "intro_optimized.svg")
+      p(style='font-size: 0.6em; text-align: left; color: grey;') Original images by Subh83 (Wikipedia)
+    if (step === 8)
+      .slide-modal
+        .vcenter
+          center
+            img(src=__dir + 'age_of_empires.jpg' style='width: 90%; border: solid 2px white;')
+            p.small-font(style='color: white') #[i Age of Empires] uses A* for moving AI-controlled units
+
+each step in [0, 3, 4, 5, 6, 7, 8, 9, 10]
+  .slide(style='padding-bottom:0; margin-bottom: 0; border: none;')
+    .header=title
+    .content.vcenter: center
+      +stepSVG(step, __dir + "multishop_optimized.svg")
+
+each step in [0, 1, 2, 3, 4, 5]
+  .slide(style='padding-bottom:0; margin-bottom: 0; border: none;')
+    .header=title
+    .content.vcenter: center
+      +stepSVG(step, __dir + "multistep_optimized.svg")

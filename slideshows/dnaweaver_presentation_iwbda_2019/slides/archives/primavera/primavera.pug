@@ -1,0 +1,37 @@
+- var __dir = './slides/primavera/'
+
+
+each step in [1, 2, 3, 4, 5, 6, 7]
+  .slide
+    .header Sanger Primer Selection Problem
+    .content.top-10mm
+      if step > 1
+        p In synthetic biology you often assemble batches with:
+          ul
+            if step > 2
+              li Many constructs (=long and costly sequencing)
+            if step > 3
+              li Inter-construct homologies (potential for primer re-use)
+            if step > 4
+              li Constructs self-homologies (no primers in these zones!)
+            if step > 5
+              li Known parts (you have primers for these in the fridge)
+          if step > 6
+            span How to select the best primers to Sanger-sequence a batch?
+
+each step in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  .slide
+    h2.header Sanger Primer Selection Software
+    .content.vcenter
+      +stepSVG(step, __dir + 'primers_selection_optimized.svg')
+
+.slide
+  h2.header Sanger Primer Selection Software
+  .content.vcenter
+    img.full-width(src=__dir + 'primer_selection_software_optimized.svg')
+
+.slide
+  h2.header Next step: NGS verification?
+  .content.vcenter
+    center
+      img.full-width(src=__dir + 'minion.png')

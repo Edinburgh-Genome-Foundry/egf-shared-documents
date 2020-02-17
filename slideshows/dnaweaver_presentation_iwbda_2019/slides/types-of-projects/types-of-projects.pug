@@ -1,0 +1,52 @@
+- var __dir = './slides/types-of-projects/'
+- var title = 'Problem: assembly projects are varied and complex'
+each step in [0, 1, 2, 3]
+  .slide
+    .header=title
+    .content.vcenter
+      +stepSVG(step, __dir + "types_of_projects_optimized.svg", layer='all')
+
+.slide
+  .header=title
+  .content.vcenter
+    +stepSVG(3, __dir + "types_of_projects_optimized.svg", layer='all')
+  .slide-modal
+      .vcenter
+        center
+          img(src=__dir + 'ravencad_optimized.svg' style='width: 95%;')
+          p.small-font(style='color: white;') RavenCAD, Appleton et al., Nat. Met. 2014
+          
+
+each step in [3, 4, 5, 6, 7, 8]
+  .slide
+    .header=title
+    .content.vcenter
+      +stepSVG(step, __dir + "types_of_projects_optimized.svg", layer='all')
+
+
+each step in [0, 1]
+  .slide
+    .header=title
+    .content.vcenter
+      +stepSVG(8, __dir + "types_of_projects_optimized.svg", layer='all')
+    .slide-modal
+        .vcenter
+          center
+            div(style='width: 45%; display: inline-block')
+              img(src=__dir + 'sc20.png' style='width: 95%;')
+              p(style='color: white; font-size: 0.6em;').
+                Assembly hierarchy of Sc2.0, from #[br]
+                #[i Design of a synthetic yeast genome] #[br]
+                Richardson et al., Science, 2017
+            div(class=showFrom(step, 1)
+                style='width: 45%; display: inline-block')
+              img(src=__dir + 'genome_partitioner.jpeg' style='width: 95%;')
+              p(style='color: white; font-size: 0.6em;').
+                Genome Partitioner, #[br]
+                Christensen et al., PLOS One, 2017
+
+each step in [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+  .slide
+    .header=title
+    .content.vcenter
+      +stepSVG(step, __dir + "types_of_projects_optimized.svg", layer='all')

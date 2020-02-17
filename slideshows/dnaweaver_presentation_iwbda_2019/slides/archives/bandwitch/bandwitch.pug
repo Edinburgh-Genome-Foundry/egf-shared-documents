@@ -1,0 +1,20 @@
+- var __dir = './slides/bandwitch/'
+
+each step in [1, 2, 3, 4, 5, 6, 7, 8]
+  .slide
+    h2.header Restriction validation problem
+    .content.vcenter: div
+      p.top-0mm Shoot yourself in the foot with a bad choice of enzymes!
+      center
+        .svg(style="width:75%")
+          +stepSVG(step, __dir + 'bad_digestions.svg')
+
+      p(class= step === 8 || 'hide').
+        Other problems: methylation-sensitive enzymes, enzymes with
+        incompatible activation temperatures.
+
+each step in [1, 2, 3, 4, 5, 6, 7]
+  .slide
+    .header Restriction validation software
+    .content.vcenter
+      +stepSVG(step, __dir + 'bandwitch_optimized.svg')

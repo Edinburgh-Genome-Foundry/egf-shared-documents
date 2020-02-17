@@ -1,0 +1,13 @@
+- var __dir = './slides/shortest-path-decomposition/'
+
+each step in [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14, 15, 16, 17]
+  .slide(style='padding-bottom:0; margin-bottom: 0; border: none;')
+    .header How DNA Weaver decomposes sequences into fragments
+    .content.vcenter: center
+      +stepSVG(step, __dir + "shortest-path-decomposition_optimized.svg", layer='all')
+
+each step in [0,1,2,3,4,5,6,7,8,9]
+  .slide(style='padding-bottom:0; margin-bottom: 0; border: none;')
+    .header Note: the complexity explodes with assembly steps
+    .content.vcenter: center
+      +stepSVG(step, __dir + "chained-assemblies_optimized.svg", layer='all')

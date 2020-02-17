@@ -1,0 +1,20 @@
+- var __dir = './slides/dna_sources/'
+-
+  var layers = [
+    ['sidebar-all', [0, 1, 2, 3, 4]],
+    ['vendor', [0, 1, 2, 3, 4, 5, 6, 7]],
+    ['library', [0, 1, 2, 3, 4]],
+    ['pcr-extraction', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]],
+    ['comparator', [0, 1, 2, 3, 4, 5, 6]],
+    ['assembly', [0, 1, 2, 3, 4, 5, 6, 7]],
+    ['adapter', [0, 1, 2, 3, 4, 5, 6, 7, 8]],
+    ['pcr-linearization', [0, 1, 2, 3, 4, 5]]
+  ]
+
+each layer_steps in layers
+  - var [layer, steps] = layer_steps
+  each step in steps
+    .slide(style='padding-bottom:0; margin-bottom: 0; border: none;')
+      .header Types of DNA sources supported in DNA Weaver
+      .content.vcenter: center
+        +stepSVG(step, __dir + "dna_sources2_optimized.svg", layer)

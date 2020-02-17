@@ -1,0 +1,22 @@
+.egf-team.slide {
+    .person {
+        display: inline-block;
+        text-align: center;
+        width: 29.2%;
+        padding: 0.5em;
+        height: 1.4in;
+        margin-bottom: 0.5in;
+        img {
+        margin: 0 auto;
+        height: 100%;
+        border: 1px solid grey;
+        box-shadow: 0px 2px 5px #aaa;
+        margin-bottom: 0.2em;
+        }
+        .name, .role {
+        font-size: 0.6em;
+        }
+        .name { font-weight: bold }
+        .role { color: darken(#30678b, 10) }
+    }
+}

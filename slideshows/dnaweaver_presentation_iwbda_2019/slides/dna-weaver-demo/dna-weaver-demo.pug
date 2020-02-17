@@ -1,0 +1,43 @@
+- var __dir = './slides/dna-weaver-demo/'
+
+each step in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  .slide
+    .header Automated assembly planning with DNA Weaver
+    .content.vcenter
+      //- div.small-font(style="display: inline-block; width: 65%; vertical-align: middle;")
+      div.small-font
+        p(class=step > 0 ? 'show' : 'hide').
+          Given a DNA sequence, DNA Weaver automatically devises an
+          optimal assembly strategies accounting for:
+        ul
+          li(class=showFrom(step, 2)) Your lab's preferred assembly techniques
+          li(class=showFrom(step, 3)) Your available DNA sources (vendors, libraries)
+          li(class=showFrom(step, 4)) Your budget and time constraints.
+        p(class=showFrom(step, 5)) It can be used as:
+        ul
+          li(class=showFrom(step, 6)) A Python framework (for scripts or web servers)
+          li(class=showFrom(step, 7)) An interactive web interface
+        p(class=showFrom(step, 8)) It is free, open-source (MIT), easily extensible.
+    if step == 9
+      img(style='position: absolute; width: 40%; right: -1.1cm; bottom: -3.5cm' src=__dir + 'not-battle-tested.svg')
+
+
+each step in [0,1,2,3,4,5,6,7,8,9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+  .slide
+    .vcenter
+      center
+        div(style='width: 100%;')
+          +stepSVG(step, __dir + "dna-weaver-demo_optimized.svg")
+    if (step > 10) && (step < 14)
+      .slide-modal
+        .vcenter
+          center
+            div(style='width: 80%;')
+              +stepSVG(step - 10, __dir + "sequence-modal_optimized.svg")
+    if (step > 14)
+      .slide-modal
+        .vcenter
+          center
+            div(style='width: 100%;')
+              +stepSVG(step - 14, __dir + "report-modal_optimized.svg")
+

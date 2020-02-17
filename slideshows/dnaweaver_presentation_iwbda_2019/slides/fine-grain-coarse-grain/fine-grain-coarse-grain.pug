@@ -1,0 +1,7 @@
+- var __dir = './slides/fine-grain-coarse-grain/'
+
+each step in [0,1,2,3,4,5]
+  .slide(style='padding-bottom:0; margin-bottom: 0; border: none;')
+    .header Nucleotide skipping for faster sequence decomposition
+    .content.vcenter: center
+      +stepSVG(step, __dir + "fine-grain-coarse-grain_optimized.svg", layer='all')

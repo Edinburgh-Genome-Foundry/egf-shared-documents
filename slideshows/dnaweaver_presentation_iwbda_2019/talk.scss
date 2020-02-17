@@ -1,0 +1,117 @@
+@import 'theme';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/table.min.css';
+.slide#plan {
+  .column {
+    border-radius: 20px;
+    margin: 2.5%;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+    background-color: lighten(#30678b, 61);
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    text-align: center;
+    h3 {
+      text-align: center;
+      margin-top: 0.4em;
+      margin-bottom: 0em;
+    }
+    color: #30678b;
+    h5 {
+      font-size: 0.5em;
+      text-transform: uppercase;
+      margin-bottom: 0.4em;
+      margin-top: 2.5em;
+    }
+    .part {
+      margin-top: 1.1em;
+      // text-align: left;
+      .title {
+        font-size: 20px;
+      }
+      .subtitle {
+        font-size: 16px;
+        color: black;
+      }
+    }
+  }
+}
+
+.quarter {
+  display: inline-block;
+  flex: 0;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+  .name {
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 0.3em;
+  }
+  img {
+    width: 90%;
+    margin-left:5%
+  }
+}
+
+.picklist {
+  width: 40%;
+  display: inline-block;
+  font-size: 13px !important;
+  table {
+  text-align: center !important;
+  }
+}
+
+a.software-link {
+  display: block;
+  font-family: 'Inconsolata';
+  font-size: 0.8em;
+  color: #30678b;
+  margin-top: 1em;
+  text-align: center;
+}
+.confidential {
+  position: fixed;
+  font-weight: bold;
+  font-size: 0.4em;
+  margin-top: 520px;
+  margin-left: 10px;
+  padding: 0.5em;
+  color: #ff000033;
+  border-radius: 0.5em;
+  border: 5px solid #ff000033;
+}
+
+.chapter-slide {
+  .chapter-title {
+    position: absolute;
+    width: $page-width;
+    text-align: center;
+    bottom: 0.45*$page-height;
+    line-height: 1.1em;
+    font-family: Oswald;
+    h2 {
+      margin-top: 0;
+      text-align: center;
+      // letter-spacing: 0.2em;
+      margin-bottom: 2cm;
+      color: lighten(#514f81, 20%)
+    }
+    h1.huge {
+      text-align: center;
+      color: #514f81;
+      font-size: 5em;
+      font-weight: 500;
+      margin-bottom: 0.5em;
+    }
+  }
+  img.foundry {
+    margin-top: 5.8cm;
+    width: 100%;
+    clip-path: polygon(100% 7%, 100% 100%, 0% 83%, 0 23%);
+  }
+}

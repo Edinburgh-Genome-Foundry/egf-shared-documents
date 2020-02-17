@@ -1,0 +1,14 @@
+- var __dir = './slides/EMMA/'
+
+each step in [0, 3, 4]
+  .slide
+    .header What we're building: the EMMA assembly standard
+    .content.top-7mm
+      +stepSVG(step, __dir + "emma_simple_optimized.svg")
+      if step > 3
+        p Used at the EGF for:
+          ul
+            li Mammalian expression vectors,
+            li Viral gene therapy projects
+            li CRISPR studies
+            li Chromosomal insertion for structural biology projects...

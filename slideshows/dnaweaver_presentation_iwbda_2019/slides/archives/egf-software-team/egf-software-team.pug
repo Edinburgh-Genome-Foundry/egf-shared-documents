@@ -1,0 +1,32 @@
+- var __dir = './slides/egf-software-team/'
+each step in [1,2,3,4,5,6]
+  .egf-team.slide
+    .header The EGF Software Team
+    .content
+      if step > 1
+        .person
+          img.round(src=__dir + 'valentin.jpg')
+          .name Valentin Zulkower
+          .role Software Manager
+        .person
+          img.round(src=__dir + 'aitor.jpg')
+          .name Aitor Bleda (-2018)
+          .role Integration Engineer
+        .person
+          img.round(src=__dir + 'isaac.jpg')
+          .name Isaac Luo  (-2018)
+          .role Software Engineer
+      p
+        if step > 2
+          b Software goals:
+        ul
+          if step > 3
+            li Make the foundry operators happy
+          if step > 4
+            li Make customers happy
+          if step > 5
+            li.
+              Lower the programming bar for bio-facilities by building and
+              sharing re-usable software components
+style
+  include:scss egf-software-team.scss
